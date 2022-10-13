@@ -1,0 +1,5 @@
+function paperwork(n, m) {
+  let res = n * m;
+ (n < 0 || m < 0) ? res = 0 : res;
+    return res;
+}
