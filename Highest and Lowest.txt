@@ -1,0 +1,8 @@
+function highAndLow(numbers){
+  let str = '';
+  let myArr = numbers.split(' ');
+  let max = Math.max(...myArr);
+  let min = Math.min(...myArr);
+  str = `${max} ${min}`;
+  return str;
+}
