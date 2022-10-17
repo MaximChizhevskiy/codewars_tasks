@@ -1,0 +1,29 @@
+function likes(names) {
+ let str = "no one likes this";
+  if (names === []){
+   str = "no one likes this";
+  } else {
+    for (let i = 0; i < names.length; i++) {
+      switch (names.length) {
+  case 1:
+    str = `${names[0]} likes this`;
+    break;
+  case 2:
+    str = `${names[0]} and ${names[1]} like this`;
+    break;
+  case 3:
+    str = `${names[0]}, ${names[1]} and ${names[2]} like this`;
+    break;
+  case 4:
+    str = `${names[0]}, ${names[1]} and 2 others like this`;
+    break;
+
+}
+     if (names.length > 4){
+     str = `${names[0]}, ${names[1]} and ${names.length -2} others like this`;  
+     } 
+    }
+    
+  }
+  return str;
+}
