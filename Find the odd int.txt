@@ -1,0 +1,25 @@
+function findOdd(A){
+
+let counts = {};
+    
+let oddNum = 1;
+
+for(let i =0; i < A.length; i++)
+{
+if (counts[A[i]]){
+
+counts[A[i]] += 1;
+
+} else {
+
+counts[A[i]] = 1;
+
+}
+}for (let prop in counts){
+
+if (counts[prop] % 2 !==0){
+oddNum = prop;
+}
+}return Number(oddNum);
+
+}
