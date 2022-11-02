@@ -1,0 +1,22 @@
+function whatNumberIsIt(n){
+let str = '';
+switch (n){
+case Number.MAX_VALUE: 
+  str = `Input number is Number.MAX_VALUE`;
+  break;
+case Number.MIN_VALUE: 
+  str = `Input number is Number.MIN_VALUE`;
+  break;
+case Number.NEGATIVE_INFINITY: 
+  str = `Input number is Number.NEGATIVE_INFINITY`;
+  break;
+case Number.POSITIVE_INFINITY: 
+  str = `Input number is Number.POSITIVE_INFINITY`;
+  break;
+case n: 
+  str = `Input number is ${n}`;
+  break;
+    }
+(Number.isNaN(n)) ? str = `Input number is Number.NaN` : n;
+ return str
+}
