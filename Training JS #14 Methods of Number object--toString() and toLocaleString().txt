@@ -1,0 +1,7 @@
+function colorOf(r,g,b){
+let rCode = r.toString(16).padStart ( 2, '0' ),
+    gCode = g.toString(16).padStart ( 2, '0' ),
+    bCode = b.toString(16).padStart ( 2, '0' );
+  return `#${rCode}${gCode}${bCode}`;
+  
+}
