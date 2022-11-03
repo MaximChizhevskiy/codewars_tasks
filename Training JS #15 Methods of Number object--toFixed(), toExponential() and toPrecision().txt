@@ -1,0 +1,8 @@
+function howManySmaller(arr,n){
+let res = 0;
+for (let i = 0; i < arr.length; i++){
+(arr[i].toFixed(2) < n) ? res++ : n;
+
+} 
+  return res ;
+}
