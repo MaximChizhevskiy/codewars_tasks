@@ -1,0 +1,9 @@
+function factorial(n) {
+if (typeof(n) !== 'number' || !Number.isInteger(n)) {
+return "Ошибка, проверьте данные";
+} else if (n >= 1){
+return String(n * factorial(n - 1));   
+} else {
+   return String(1);
+}   
+}
