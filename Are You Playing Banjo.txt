@@ -1,0 +1,7 @@
+function areYouPlayingBanjo(name) {
+
+  let arrName = name.split('');
+  
+return (arrName[0] == 'r' || arrName[0] == 'R') ? `${name} plays banjo` : 
+`${name} does not play banjo`
+}
