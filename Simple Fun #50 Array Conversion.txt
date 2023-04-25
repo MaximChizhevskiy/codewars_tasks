@@ -1,0 +1,15 @@
+function arrayConversion(arr) {
+  
+  for (let i = 0; arr.length > 1; ++i) {
+    const newArr = []
+    for (let j = 0; j < arr.length; j += 2) {
+      if (i & 1) {
+        newArr.push(arr[j] * arr[j + 1])
+      } else {
+        newArr.push(arr[j] + arr[j + 1])
+      }
+    }
+    arr = newArr
+  }
+  return arr[0]
+}
