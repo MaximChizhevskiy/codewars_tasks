@@ -1,0 +1,17 @@
+function getSum(a, b) {
+// Initialize sum
+    let sum = 0;
+
+    // Determine the start and end values for the loop
+    const start = Math.min(a, b);
+    const end = Math.max(a, b);
+
+    // Iterate through the numbers from start to end, inclusive, and sum them up
+    for (let i = start; i <= end; i++) {
+        sum += i;
+    }
+
+    // Return the sum
+    return sum;
+ 
+}
