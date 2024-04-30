@@ -1,0 +1,19 @@
+function longest(s1, s2) {
+  // Объединяем строки s1 и s2
+    let combinedString = s1 + s2;
+    
+    // Преобразуем объединенную строку в массив символов
+    let charArray = combinedString.split('');
+    
+    // Удаляем повторяющиеся символы, используя Set для хранения уникальных символов
+    let uniqueChars = [...new Set(charArray)];
+    
+    // Сортируем уникальные символы в алфавитном порядке
+    let sortedChars = uniqueChars.sort();
+    
+    // Преобразуем отсортированные символы обратно в строку
+    let resultString = sortedChars.join('');
+    
+    // Возвращаем полученную строку
+    return resultString;
+}
