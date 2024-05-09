@@ -1,0 +1,4 @@
+function friend(friends){
+  const myFriendsNameLength = 4;
+  return friends.filter(f => f.length === myFriendsNameLength) 
+}
