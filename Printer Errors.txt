@@ -1,0 +1,10 @@
+function printerError(s) {
+    const allowedWords = 'abcdefghijklm'
+    let counterErrors = 0
+    
+    for (let char of s) {
+      if (!allowedWords.includes(char))
+        counterErrors++
+    }
+     return `${counterErrors}/${s.length}`
+}
