@@ -1,3 +1,4 @@
+function findNextSquare(sq) {
   const root = Math.sqrt(sq);
   if (Number.isInteger(root)) {
     const nextRoot = root + 1;
@@ -5,3 +6,4 @@
   } else {
     return -1;
   }
+}
