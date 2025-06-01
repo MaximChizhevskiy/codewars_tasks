@@ -1,0 +1,16 @@
+function duplicateEncode(word){
+   const lowerWord = word.toLowerCase(); // Приводим к нижнему регистру для регистронезависимого сравнения
+  const result = [];
+  
+  for (let i = 0; i < lowerWord.length; i++) {
+    const char = lowerWord[i];
+    // Проверяем, встречается ли символ в строке более одного раза
+    if (lowerWord.indexOf(char) === lowerWord.lastIndexOf(char)) {
+      result.push('(');
+    } else {
+      result.push(')');
+    }
+  }
+  
+  return result.join(''); // Собираем массив в строку
+}
